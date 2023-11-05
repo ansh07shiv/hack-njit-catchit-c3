@@ -1,0 +1,93 @@
+f.name-list {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tiles {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  li:hover {
+    transform: scale(1.05);
+    background-color: #ececec;
+    border-color: #666;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tile-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+  }
+  
+  .date {
+    font-weight: bold;
+  }
+  
+  .location {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .fish-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .fish-info {
+    text-align: center;
+  }
+  
+  .fish-type {
+    font-weight: bold;
+  }
+  
+  .fish-count {
+    color: #555;
+  }
+  
+  /* Add animation for the hover effect */
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  li:hover {
+    animation: shadow-pulse 1s infinite;
+  }
+  
